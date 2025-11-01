@@ -1,0 +1,27 @@
+{{ define "main" }}
+<div class="container">
+    <header class="site-header">
+        <h1>{{ .Site.Title }}</h1>
+        {{ with .Site.Params.description }}
+        <p class="site-description">{{ . }}</p>
+        {{ end }}
+    </header>
+
+    <main class="blog-list">
+        {{ range .Site.RegularPages.ByDate.Reverse }}
+        {{ if eq .Type "posts" }}
+        <article class="blog-post-preview">
+            <time class="post-date">{{ .Date.Format "January 2, 2006" }}</time>
+            <h2 class="post-title">
+                <a href="{{ .Permalink }}">{{ .Title }}</a>
+            </h2>
+            {{ with .Summary }}
+            <p class="post-summary">{{ . }}</p>
+            {{ end }}
+            <a href="{{ .Permalink }}" class="read-more">Read more →</a>
+        </article>
+        {{ end }}
+        {{ end }}
+    </main>
+</div>
+{{ end }}
