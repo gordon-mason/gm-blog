@@ -1,12 +1,12 @@
 +++
 date = '2025-11-01'
-draft = true
+draft = false
 title = 'First Post'
 +++
 
-My name is Gordon, a software engineer from Scotland. 
+My name is Gordon. I'm a software engineer from Scotland. 
 
-This blog is an exercise to sharpen my writing and document some of the things I've learned in my career. I'll avoid using AI and state explicitly when I do so.
+This blog is an exercise to sharpen my writing and document some of the things I've learned in my career. I'll avoid using AI and declare explicitly if I do so.
 
 Since 2017 I've gained experience building SPAs, APIs/microservices, data pipelines, data lakes, and event-driven applications across finance, consulting and SaaS businesses.
 
